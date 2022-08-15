@@ -1,0 +1,16 @@
+<div id="main-container">
+    <div id="title-container">
+    <h1>Stupid coaching</h1>
+  </div>
+
+  <div id="tag-container">
+    <h2>Ask your coach anything!</h2>
+  </div>
+
+  <div id="form-container">
+    <form action="/answer" data-turbo="false" method="get" id="full-form">
+      <input type="text" name="question" value="<%= params[:question] %>" id="input-field">
+      <button type="submit" id="submit-button">ASK</button>
+    </form>
+  </div>
+</div>
